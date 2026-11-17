@@ -1,0 +1,23 @@
+// Day 1 – Backend Fundamentals, Web & API Basics
+// Topics
+
+// Frontend vs Backend responsibilities
+
+
+
+
+// Client–Server architecture
+// How the web works: DNS → HTTP → Response
+// HTTP methods and status codes
+// REST API fundamentals
+// API versioning basics
+// HTTPS importance and backend trust boundaries
+
+// Hands-on
+
+// Inspect API calls in browser DevTools
+// Call public APIs using Postman
+
+// Outcome
+
+// Clear understanding of how requests reach backend and return responses
