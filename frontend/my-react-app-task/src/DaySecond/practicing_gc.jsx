@@ -215,3 +215,63 @@
 // (Agar aapne pehle git push -u origin main run kiya tha, toh sirf git pull likhna kaafi hai—warna git pull origin main likhein.)Jab pehle changes check karne hon (safe tarika):Bashgit fetch origin
 // Iske baad git status ya git log main..origin/main chala kar dekh sakte hain ki GitHub par kaunse naye commits aaye hain. Agar sab theek lage, toh git merge origin/main run karke unhe apne code mein mila lein.
 
+// Stash Commands
+// Stash ka matlab hai temporarily apne unfinished changes ko side mein rakhna.
+
+// Real-world example:
+
+// Aap login feature par kaam kar rahe hain. Abhi code complete nahi hua.
+
+// Lekin manager bolte hain:
+
+// "Please main branch par ek urgent bug fix karo."
+
+// Abhi aap login feature ka code commit nahi karna chahte.
+
+// Toh aap Stash use kar sakte hain.
+// 15.1 git stash
+// git stash
+
+
+// Tracked files ke current changes temporarily save karke Working Directory clean karta hai.
+// 15.2 git stash -u
+// git stash -u
+
+
+// Tracked changes ke saath untracked files bhi stash karta hai.
+// 15.3 git stash push -m
+// git stash push -m "login WIP"
+
+
+// Stash ko meaningful message ke saath save karta hai.
+
+// WIP = Work In Progress.
+// 15.4 git stash list
+// git stash list
+
+
+// Saved stashes ki list show karta hai.
+
+// Example:
+// stash@{0}: On main: login WIP
+// stash@{1}: On dev: navbar changes
+
+
+// 15.5 git stash pop
+// git stash pop
+
+
+// Latest stash ko wapas apply karta hai aur successfully apply hone par stash list se remove karta hai.
+// 15.6 git stash apply
+// git stash apply
+
+
+// Stash ke changes wapas apply karta hai, lekin stash list se remove nahi karta.
+// 15.7 git stash drop
+// git stash drop
+
+
+// Latest stash entry delete karta hai.
+
+// Specific stash delete karne ke liye:
+// git stash drop stash@{1}
